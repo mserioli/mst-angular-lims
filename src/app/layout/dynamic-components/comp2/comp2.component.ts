@@ -21,7 +21,7 @@ export class Comp2Component extends TabbedComponent implements OnInit {
 
   ngOnInit() {
     super.ngOnInit();
-    console.log('sub');
+
     this.tab = this.host.tab;
     this.testForm = this.formBuilder.group({
       campo: [this.tab.data.campo, [Validators.required]],
