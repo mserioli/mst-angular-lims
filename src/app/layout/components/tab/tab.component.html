@@ -1,0 +1,4 @@
+<div *ngIf="tab" class="tab-pane fade show" [ngClass]="{ 'active': tab.active }" role="tabpanel"
+  aria-labelledby="nav-home-tab">
+    <ng-container *ngComponentOutlet="dynamicComponent"></ng-container>
+</div>

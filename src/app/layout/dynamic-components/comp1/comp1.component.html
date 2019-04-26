@@ -1,0 +1,9 @@
+<p>
+  comp1 works!
+</p>
+{{ tab.title | uppercase }}
+<input [(ngModel)]="tab.data.campo"> {{tab.data.campo}}
+<br>
+<button (click)="debug()">Debug</button><br>
+<input type="checkbox" #chkNewTab>
+<button (click)="nuovo(chkNewTab.checked)">Nuovo</button>

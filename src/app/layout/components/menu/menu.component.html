@@ -1,0 +1,9 @@
+<input #title placeholder="Titolo"><input type="checkbox" #chkNewTab> Nuova tab? <br>
+<select [(ngModel)]="component">
+  <option value="comp1">Comp 1</option>
+  <option value="comp2">Comp 2</option>
+</select><br>
+<textarea #data placeholder="Dati">{ "campo": "valore di default" }</textarea><br>
+<textarea #config placeholder="Configurazione">{}</textarea><br>
+<button (click)="addTab(title.value, chkNewTab.checked, data.value)">Aggiungi tab</button>
+<button (click)="back()">Back</button>

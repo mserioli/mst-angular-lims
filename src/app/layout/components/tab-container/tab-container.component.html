@@ -1,0 +1,12 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li *ngFor="let ut of uiTabs" class="nav-item">
+    <span class="nav-link" [ngClass]="{ 'active': ut.active }" (click)="selectUiTab(ut)">
+      {{ut.currentLimTab.title}}
+      <span *ngIf="ut && ut.currentLimTab && ut.currentLimTab.dataChanged">*</span>
+      <span class="badge">{{ut.limsTabs.length}}</span>
+      <span *ngIf="ut.closeable" (click)="closeTab(ut)" class="tab-close">X</span>
+    </span>
+  </li>
+</ul>
+<div class="tab-content" #tabContent>
+</div>
